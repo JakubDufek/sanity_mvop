@@ -7,7 +7,7 @@ export default defineType({
   fields: [
     defineField({
       name: 'title',
-      title: 'Title',
+      title: 'Nadpis',
       type: 'string',
     }),
     defineField({
@@ -25,6 +25,19 @@ export default defineType({
       title: 'Excerpt',
       type: 'text',
       rows: 4,
+    }),
+    defineField({
+      name: 'category',
+      title: 'categorie',
+      type: 'string',
+      options: {
+        list: ['sci-fi', 'western']
+      }
+    }),
+    defineField({
+      name: 'author',
+      title: 'autor',
+      type: 'person',
     }),
     defineField({
       name: 'mainImage',

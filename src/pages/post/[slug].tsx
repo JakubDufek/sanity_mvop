@@ -67,6 +67,7 @@ export default function ProjectSlugRoute(
         )}
         <div className="post__container">
           <h1 className="post__title">{post.title}</h1>
+          <p className="post__category">{post.category}</p>
           <p className="post__excerpt">{post.excerpt}</p>
           <p className="post__date">{formatDate(post._createdAt)}</p>
           <div className="post__content">
