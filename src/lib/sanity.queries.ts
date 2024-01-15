@@ -23,6 +23,12 @@ export async function getPost(
 export const postSlugsQuery = groq`
 *[_type == "post" && defined(slug.current)][].slug.current
 `
+export const authorQuery = groq`
+  *[_type == 'person'] {
+    name,
+    // Include more fields as needed
+  }
+`;
 
 export interface Post {
   _type: 'post'

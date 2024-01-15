@@ -3,17 +3,17 @@ import { defineField, defineType } from 'sanity'
 export default defineType({
     name: "person",
     title: "person",
-    type: "object",
+    type: "document",
     fields:[
         defineField({
-            name: 'firstName',
-            title: 'křestní',
+            name: 'name',
+            title: 'jméno',
             type: 'string',
           }),
           defineField({
-            name: 'lastName',
-            title: 'príjmení',
-            type: 'string',
+            name: 'age',
+            title: 'věk',
+            type: 'number',
           }),
     ]
 

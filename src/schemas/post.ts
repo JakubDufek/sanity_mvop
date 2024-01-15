@@ -34,12 +34,12 @@ export default defineType({
         list: ['sci-fi', 'western']
       }
     }),
-    /*defineField({
+    defineField({
       name: 'author',
       title: 'autor',
       type: 'reference',
       to: [{type: "person"}]
-  }),*/
+  }),
     defineField({
       name: 'mainImage',
       title: 'Main image',

@@ -50,7 +50,7 @@ export default function ProjectSlugRoute(
   const [post] = useLiveQuery(props.post, postBySlugQuery, {
     slug: props.post.slug.current,
   })
-
+  
   return (
     <Container>
       <section className="post">
